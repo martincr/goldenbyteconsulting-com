@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Page</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-alerts.js"></script>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+</head>
+<body style="padding-top: 50px;">
+    <section id="navigation">
+        <div class="topbar-wrapper" style="z-index: 5;">
+            <div class="topbar" data-dropdown="dropdown">
+                <div class="topbar-inner">
+                    <div class="container">
+                        <h3><a href="/">Start Page</a></h3>
+                        <ul class="nav">
+
+                        </ul>
+                    </div>
+                </div><!-- /topbar-inner -->
+            </div><!-- /topbar -->
+        </div><!-- /topbar-wrapper -->
+    </section>
+    <div class="container">
+        <% index = 0 %>
+        <% settings.stories.each do |id, story| %>
+        <% if (index % 3) == 0 %>
+        <div class="row">
+        <% end %>
+            <div class="span5">  
+                <h2><%= story["title"] %></h2>
+                <p><%= (story["summary"].nil? || story["summary"] == ""  ? story["content"] : story["content"]).gsub(/<\/?[^>]*>/, "")[0..280] %></p>
+                <p><a class="btn" href="/read/<%= CGI::escape(id) %>" target="_blank">Read &raquo;</a></p>
+                              
+            </div>
+        <% if (index % 3) == 2 %>
+        </div>
+        <% end %>
+        <% index += 1 %>
+        <% end %>
+    </div>
+</body>
+</html>
