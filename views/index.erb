@@ -23,21 +23,15 @@
         </div><!-- /topbar-wrapper -->
     </section>
     <div class="container">
-        <% index = 0 %>
-        <% settings.stories.each do |id, story| %>
-        <% if (index % 3) == 0 %>
+
         <div class="row">
-        <% end %>
+
             <div class="span5">  
                 <h2>Title</h2>
                 <p>Story</p>
                 <p><a class="btn" href="/read/=" target="_blank">Read &raquo;</a></p>
             </div>
-        <% if (index % 3) == 2 %>
         </div>
-        <% end %>
-        <% index += 1 %>
-        <% end %>
     </div>
 </body>
 </html>
