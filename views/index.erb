@@ -29,10 +29,9 @@
         <div class="row">
         <% end %>
             <div class="span5">  
-                <h2><%= story["title"] %></h2>
-                <p><%= (story["summary"].nil? || story["summary"] == ""  ? story["content"] : story["content"]).gsub(/<\/?[^>]*>/, "")[0..280] %></p>
-                <p><a class="btn" href="/read/<%= CGI::escape(id) %>" target="_blank">Read &raquo;</a></p>
-                              
+                <h2>Title</h2>
+                <p>Story</p>
+                <p><a class="btn" href="/read/=" target="_blank">Read &raquo;</a></p>
             </div>
         <% if (index % 3) == 2 %>
         </div>
