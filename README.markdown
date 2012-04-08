@@ -13,7 +13,10 @@ http://goldenbyteconsulting-com.dev
 
 Git
 --
+git remote
 git status
 git add .
 git commit -a -m "New page"
 git commit -a -m "Updated page"
+git push origin master
+git push heroku master
