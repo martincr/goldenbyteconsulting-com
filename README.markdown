@@ -1,6 +1,10 @@
 README.markdown
 ==
 
+Bootstrap
+--
+[Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem)
+
 Pow
 --
 cd ~/.pow
@@ -13,7 +17,11 @@ http://goldenbyteconsulting-com.dev
 
 Git
 --
-git remote
+git remote -v
+git remote rm origin
+git remote add origin git@github.com:rockstardevelopments/goldenbyteconsulting-com.herokuapp.com.git
+git push -u origin master
+
 git status
 git add .
 git commit -a -m "New page"
