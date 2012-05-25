@@ -1,5 +1,14 @@
 body,p{font-family:Georgia,Times,"Times New Roman",serif;}
 body{color:#051a48;background-color:#fff;background-image:url("../img/stripe_da72fb37e4bc789639bcfdc9525dd14b.png");}
+
 .hero-unit{background-image:url("../img/bootstrap-mdo-sfmoma-02.jpg");background-repeat:no-repeat;}
 .hero-unit h1,.hero-unit p{color:#fff;text-shadow: 0 1px 0 #000;}
+
 .white{background-color:#fff;}
+
+/*
+.navbar{background-color:#fff;}
+.navbar-fixed-top .navbar-inner{height:90px;background-color:#fff;}
+.navbar-inner .container{background-color:#fff;}
+.navbar .brand{background-color:#fff;background-image:url("../img/bootstrap-mdo-sfmoma-02.jpg");background-repeat:no-repeat;}
+*/

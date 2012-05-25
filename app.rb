@@ -25,6 +25,22 @@ get '/contact-us' do
   erb :contact_us
 end
 
+get '/privacy-policy' do
+  erb :index
+end
+
+get '/terms-and-conditions' do
+  erb :index
+end
+
+get '/contact-us' do
+  erb :index
+end
+
+get '/site-map' do
+  erb :index
+end
+
 # See http://www.sinatrarb.com/faq.html#partials
 helpers do
   def partial template
