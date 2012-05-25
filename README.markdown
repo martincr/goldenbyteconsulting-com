@@ -8,7 +8,7 @@ Bootstrap
 Pow
 --
 cd ~/.pow
-ln -s /Users/martin/Sites/goldenbyteconsulting-com goldenbyteconsulting-com
+ln -s /Users/martincrockett/Sites/goldenbyteconsulting-com.herokuapp.com goldenbyteconsulting-com
 cd -
 mkdir tmp
 touch tmp/restart.txt
