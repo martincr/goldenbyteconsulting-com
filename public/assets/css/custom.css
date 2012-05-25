@@ -1,4 +1,7 @@
-body,p{font-family:Georgia,Times,"Times New Roman",serif;}
+body{padding-top:100px;padding-bottom:40px;}
+
+/*body,p{font-family:Georgia,Times,"Times New Roman",serif;}*/
+
 body{color:#051a48;background-color:#fff;background-image:url("../img/stripe_da72fb37e4bc789639bcfdc9525dd14b.png");}
 
 .hero-unit{background-image:url("../img/bootstrap-mdo-sfmoma-02.jpg");background-repeat:no-repeat;}
@@ -12,3 +15,6 @@ body{color:#051a48;background-color:#fff;background-image:url("../img/stripe_da7
 .navbar-inner .container{background-color:#fff;}
 .navbar .brand{background-color:#fff;background-image:url("../img/bootstrap-mdo-sfmoma-02.jpg");background-repeat:no-repeat;}
 */
+
+.navbar{background-color:#fff;}
+.navbar-inner{height:90px;background-color:#fff;}
