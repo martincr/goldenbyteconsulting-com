@@ -20,6 +20,7 @@ Git
 git remote -v
 git remote rm origin
 git remote add origin git@github.com:rockstardevelopments/goldenbyteconsulting-com.herokuapp.com.git
+git remote add heroku git@heroku.com:martincrockett-org.git
 git push -u origin master
 
 git status
